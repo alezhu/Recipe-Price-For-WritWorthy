@@ -6,8 +6,8 @@
 ## Description: Show recipe or motif price for master writ
 ## APIVersion: 101037
 ## Author: @alezhu
-## Version: 1.0.0
-## AddOnVersion: 1
+## Version: 1.1.0
+## AddOnVersion: 2
 ## DependsOn: WritWorthy LibCharacterKnowledge LibCustomMenu
 ## OptionalDependsOn: LibDebugLogger LibPrice TamrielTradeCentre MasterMerchant ArkadiusTradeTools
 
