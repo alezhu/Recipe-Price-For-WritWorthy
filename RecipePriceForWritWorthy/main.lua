@@ -189,6 +189,7 @@ local function HookWritWorthy()
                 --motif_label.itemLink = motif_link
                 motif_label:SetHidden(false)
             end
+			last_parser = nil
         end
     end
     SecurePostHook(WritWorthy, "TooltipInsertOurText", TooltipInsertOurText)
