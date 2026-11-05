@@ -1,0 +1,7 @@
+# Normalize all text files to LF inside the repository.
+* text=auto
+
+# Windows project (ESO addon): keep CRLF in the working tree for
+# the addon sources and the manifest.
+*.lua text eol=crlf
+*.txt text eol=crlf
