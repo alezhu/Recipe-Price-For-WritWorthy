@@ -170,13 +170,12 @@ local function GetOrCreateTooltipControlForMotifInfo(control)
                 end, 0)
             end
         end)
-        -- Already parented to `control` via CreateControl; re-parent only
-        -- when the host control differs (e.g. another tooltip instance)
-    else
-        if motif_label:GetParent() ~= control then
-            control:AddControl(motif_label)
-        end
     end
+    -- NOTE: ZO_Tooltip:AddControl() is a layout operation, not just a
+    -- parent change: it (re)inserts the label into the tooltip's row
+    -- flow after the tooltip has been rebuilt for the current item.
+    -- Tooltips are reused for many items, so this must run every time.
+    control:AddControl(motif_label)
     motif_label:SetAnchor(CENTER)
     return motif_label
 end
